@@ -1,0 +1,31 @@
+import java.util.Scanner;
+
+class HelloWorld {
+    public static void main(String[] args) {
+        
+        int primeiroNumero = 0;
+        int segundoNumero = 0;
+        
+        Scanner scanner = new Scanner(System.in);
+        
+        System.out.println("Informe o primeiro numero: ");
+        primeiroNumero = scanner.nextInt();
+        
+        System.out.println("Informe o segundo numero: ");
+        segundoNumero = scanner.nextInt();
+        
+        int soma = primeiroNumero + segundoNumero;
+        
+        int subtracao = primeiroNumero - segundoNumero;
+        
+        double divisao = soma / 2.0;
+        
+        int multiplicacao = primeiroNumero * segundoNumero;
+        
+        System.out.println("Resultados equacoes: ");
+        System.out.println("Soma: " + soma);
+        System.out.println("Subtracao: " + subtracao);
+        System.out.println("Divisao: " + divisao);
+        System.out.println("Multiplicacao: " + multiplicacao);
+    }
+}
