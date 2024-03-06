@@ -1,0 +1,29 @@
+import java.util.Scanner;
+
+class HelloWorld {
+    public static void main(String[] args) {
+        
+        String nomeProduto = "";
+        double precoProduto = 0.0;
+        double desconto = 0.0;
+        
+        
+        Scanner scanner = new Scanner(System.in);
+        
+        System.out.println("Informe o nome do produto: ");
+        nomeProduto = scanner.nextLine();
+        
+        System.out.println("Informe o preco do produto: ");
+        precoProduto = scanner.nextDouble();
+        
+        System.out.println("Informe o desconto do produto: ");
+        desconto = scanner.nextDouble();
+        
+        
+        double porcentagem = desconto / 100;
+        double novoValor = precoProduto - (porcentagem * precoProduto);
+        
+        System.out.println("Nome produto: " + nomeProduto);
+        System.out.println("Preco produto com desconto: " + novoValor);
+    }
+}
